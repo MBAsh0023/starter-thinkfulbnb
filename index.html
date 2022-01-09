@@ -35,34 +35,82 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <form>
+          <div class="group">
+            <div class="item">
+              <label for="location">Location</label>
+              <input 
+              id="location" 
+              type="text" 
+              name="location"
+              placeholder="Search Destination"
+              autofocus="on"
+              required>
+            </div>
+            <div class="item">
+              <label for="date">Arrive</label>
+              <input
+              type="date"
+              name="date"
+              placeholder="mm/dd/yyyy">
+              
+            </div>
+            <div class="item">
+              <label for="date">Depart</label>
+              <input
+              type="date"
+              name="date"
+              placeholder="mm/dd/yyyy">
+            
+            </div>
+            <div class="item">
+              <label for="type">Type</label>
+              <select name="type" id="type" size="1">
+                <option value="apartment">Apartment</option>
+                <option value="single room">Single Room</option>
+                <option value="house">House</option>
+                <option value="tiny house">Tiny House</option>
+                <option value="yacht">Yacht</option>
+              </select>
+            </div>
+            <button type="search">Search</button>
+          </div>
+        </form>
       </section>
 
       <!-- About -->
       <section id="about" class="alternate-background">
         <h2>About</h2>
-
+        <div class="group">
+          <div class="item-double">
         <img
           src="images/vacation-rental-pool.png"
           alt="Thinkfulbnb - Vacation rental pool"
         />
-
+          </div>
+          <div class="item-double">
         <img
           src="images/vacation-rental-inside-stone.png"
           alt="Thinkfulbnb - Vacation rental inside stone"
         />
-
-        <p>
+          </div>
+          <div class="item-double">
+          <p>
           Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
           fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
           porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
           neque, at tempus lorem. Aenean mi magna, posuere at quam sed, euismod
           gravida neque.
-        </p>
+          </p>
+          </div>
+      </div>
       </section>
 
       <!-- Ideas -->
       <section id="ideas">
         <h2>Ideas</h2>
+        <div class="group">
+          <div class="item-double">
         <h3>Forest retreats</h3>
         <img
           src="images/forest-retreat.png"
@@ -70,17 +118,22 @@
         />
         <h3>Beaches</h3>
         <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
-
+        </div>
+        <div class="item-double">
         <h3>Rustic cabins</h3>
         <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
 
         <h3>Pet-friendly</h3>
         <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
+      </div>
+      </div>
       </section>
 
       <!-- Host -->
       <section id="host" class="alternate-background">
         <h2>Want to Become a Thinkfulbnb Host?</h2>
+        <div class="group">
+          <div class="item-double">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           molestie in est id efficitur. Sed hendrerit ut turpis quis dapibus.
@@ -98,8 +151,11 @@
             hendrerit mauris.
           </li>
         </ul>
-
+        </div>
+        <div class="item-double">
         <img src="images/become-a-host.png" alt="Thinkfulbnb - Become a host" />
+      </div>
+      </div>
       </section>
     </main>
 
