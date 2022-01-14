@@ -37,7 +37,6 @@ section.alternate-background {
 
 main img {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */
@@ -58,9 +57,6 @@ main img {
 .item {
   display: flex;
   flex: 1;
- /* margin: 10px;
-  align-self:center;
-  width:100%;*/
 }
 
 .item-double {
@@ -187,6 +183,7 @@ form input {
 .item{
   flex-direction: column;
   min-width: 0;
+  padding-left: 30px;
 }
 
 button {
@@ -201,16 +198,19 @@ button {
 .one {
   flex-basis: 25%;
   margin: 10px;
+  padding: unset;
 }
 
 .two{
   flex-basis: 25%;
-  margin:10px
+  margin:10px;
+  padding: unset;
 }
 
 .three{
   flex-basis: 50%;
   margin: 10px;
+  padding: unset;
 }
 
 .item-double{
