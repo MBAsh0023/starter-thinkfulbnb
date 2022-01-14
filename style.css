@@ -27,7 +27,7 @@ p {
 }
 
 section {
-  padding: 20px;
+  padding: 4%;
 }
 
 section.alternate-background {
@@ -59,6 +59,18 @@ main img {
   flex: 1;
 }
 
+.one{
+  margin: 2%;
+}
+
+.two{
+  margin: 2%;
+}
+
+.three{
+  margin: 2%;
+}
+
 .item-double {
   flex: 2;
   }
@@ -73,7 +85,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 70px;
+  font-size: 60px;
   color: #fff;
 }
 
@@ -107,7 +119,7 @@ header nav ul li a:hover {
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
-  margin: 20px;  
+  padding: 1%  
 }
 
 
