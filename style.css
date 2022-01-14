@@ -9,7 +9,7 @@ body {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
@@ -23,7 +23,7 @@ h3 {
 p {
   line-height: 1.5em;
   margin: 0;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 section {
@@ -46,14 +46,21 @@ main img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: space-between;
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 
 .item {
+  display: flex;
   flex: 1;
-  margin: 10px;
-
+ /* margin: 10px;
+  align-self:center;
+  width:100%;*/
 }
 
 .item-double {
@@ -64,13 +71,13 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   text-align: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 100px;
+  font-size: 70px;
   color: #fff;
 }
 
@@ -100,24 +107,29 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
-  margin: 20px;
-  
+  margin: 20px;  
 }
 
 
 form label {
   font-weight: bold;
-  align-content: space-evenly;
-  margin: 40px
+  margin: 10px;
+  flex:1
 }
+
+
+
 
 form select,
 form input {
-  margin-bottom: 20px;
-  width: 180px;
+  margin: 10px 10px 20px 10px;
+  flex-grow: 1;
+  /*flex-shrink: 0;*/
+  flex-basis: 50%;
 }
 
 form button {
@@ -126,7 +138,9 @@ form button {
   color: #fff;
   font-size: 24px;
   padding: 15px;
-  width: 100%;
+  margin: auto;
+  width: 95%;
+  margin: 10px 10px 10px 10px;
 }
 
 /* -------  Footer ------- */
@@ -141,41 +155,71 @@ footer p {
   padding: 20px;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   header{
     display:flex;
-    text-align: left;
     justify-content: space-between;
   }
-
-  form label{
-   margin:0
-  }
-
-  .item-double{
-    margin: 20px;
-  }
-
 
   .logo {
     font-size: 40px;
   }
 
-  .group{
+
+  .form-group{
     flex-direction: row;
-    justify-content: space-evenly;
   }
 
-  form input, form select {
-    display: flex;
-    width: 100%;
-  }
-  form button {
-    width: 20%;
+  .form-group > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
   }
 
-  p {
-    font-size: 15px;
-  }
-  
+
+
+form select,
+form input {
+  margin: 10px;
+ /* width: 100%;*/
+}
+
+.item{
+  flex-direction: column;
+  min-width: 0;
+}
+
+button {
+  width:50%
+}
+
+.group{
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.one {
+  flex-basis: 25%;
+  margin: 10px;
+}
+
+.two{
+  flex-basis: 25%;
+  margin:10px
+}
+
+.three{
+  flex-basis: 50%;
+  margin: 10px;
+}
+
+.item-double{
+ align-items: space-around;
+ margin-left: 20px;
+}
+
+
+
+
+ 
 }
